@@ -1501,7 +1501,6 @@ section,
   display: block;
   width: 160px;
   height: 160%;
-  background: linear-gradient(90deg, transparent, #9a11cc, #9a11cc, #9a11cc, #9a11cc, transparent);
   animation: rotation_481 5000ms infinite linear;
 }
 
@@ -1598,7 +1597,6 @@ section,
 
 .circle {
   border-radius: 50%;
-  background-color: #9a11cc;
   filter: blur(15px);
 }
 
