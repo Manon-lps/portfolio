@@ -1152,7 +1152,19 @@ section,
 # Portfolio Details Section
 --------------------------------------------------------------*/
 .portfolio-details .portfolio-details-slider img {
-  width: 100%;
+  max-width: 100%;
+}
+code {
+  color : var(--accent-color);
+}
+.portfolio-details .portfolio-details-slider {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.portfolio-details .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .portfolio-details .swiper-wrapper {
@@ -1262,10 +1274,21 @@ section,
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 20px;
+  text-align: justify;
+  border-bottom: solid 3px var(--accent-color);
 }
 
 .portfolio-details .portfolio-description p {
   padding: 0;
+  text-align: justify;
+}
+
+.portfolio-details .portfolio-description ul {
+  text-align: justify;
+}
+.portfolio-details .portfolio-description h5 {
+  max-width: 70%;
+  border-bottom: solid 1px var(--accent-color);
 }
 
 .portfolio-details .portfolio-description .testimonial-item {
