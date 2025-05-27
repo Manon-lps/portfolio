@@ -104,14 +104,48 @@
 
           <div class="col-lg-8" data-aos="fade-up">
             <div class="portfolio-description">
-              <h2>Projet scolaire : réalisation d'un jeu de société numérique</h2>
+              <h2>Projet scolaire : Implémentation d’un jeu de plateau en Java</h2>
               <p>
-                Lors de ma première année de BUT Informatique, nous avons conçu, en binôme, un jeu de société intitulé Trains, en adoptant une approche de programmation orientée objet. Ce projet a été réalisé en Java, ce qui nous a permis de structurer notre code de manière claire et méthodique.              </p>
+                Dans le cadre de ma première année de BUT Informatique,  j’ai participé à la réalisation du projet Trains, une adaptation numérique en Java du jeu de plateau du même nom.            </p>
               <p>
-                Pour la gestion du projet, nous avons utilisé GitLab, ce qui m’a offert l’opportunité de travailler avec un outil de versioning dans un contexte concret. Cette expérience m’a permis de renforcer mes compétences en programmation Java et en gestion de projet collaboratif. </p>
+              <p> Ce projet avait pour objectif de consolider nos compétences en programmation orientée objet, en algorithmique sur les graphes, ainsi qu’en développement d’interfaces graphiques.</p>
               <p>
-                Pour la première phase du projet, une interface graphique en JavaScript nous a été donnée. Cela correspond à la première image du carrousel. Ensuite nous avons pu réaliser notre propre interface graphique, cette fois ci en JavaFX, c'est la deuxième image du carrousel.
+                Le développement s’est déroulé en trois phases :              </p>
+              <ul>
+                <li><strong> Phase 1 </strong>: implémentation du moteur du jeu en Java, en respectant une architecture orientée objet claire et évolutive.</li>
+                <li><strong> Phase 2 </strong> : intégration d’algorithmes de graphes pour enrichir les mécaniques de jeu.</li>
+                <li><strong> Phase 3 </strong> : création d’une interface graphique avec JavaFX, après une première version fonctionnant via une interface web fournie.</li>
+              </ul>
+
+              <p>
+                Le projet était structuré autour de plusieurs modules (GUI, logique métier, données) et évalué à l’aide de tests unitaires automatisés. Un soin particulier a été apporté à la qualité du code, à la gestion du versioning via GitLab, et au respect des bonnes pratiques de développement.
               </p>
+              <p>
+                Ce projet m’a permis d’appliquer de manière concrète des notions fondamentales telles que la gestion de l’état d’un joueur, le déroulement dynamique d’une partie, la modélisation de cartes à comportements variés, ainsi que le cycle de vie complet d’un logiciel collaboratif.
+              </p>
+              <h5>
+                Phase 1 : Mécanique du jeu et architecture orientée objet
+              </h5>
+              <p>
+                Cette première phase visait à développer l'intégralité de la mécanique du jeu Trains en Java, à partir d’un squelette fourni. J’ai particulièrement travaillé sur la modélisation des joueurs et le déroulement d’une partie complète, en m’appuyant sur les principes de la programmation orientée objet.
+              </p>
+              <p>
+                Voici un aperçu des fonctionnalités que j’ai réalisées :
+              </p>
+              <ul>
+                <li>
+                  Développement de la méthode <code>jouerTour()</code> dans la classe <code>Joueur</code>, gérant la séquence complète d’un tour de jeu (actions disponibles, achats, placement de rails/gares).
+                </li>
+                <li>
+                  Conception de la méthode <code>run()</code> dans la classe <code>Jeu</code>, responsable de la boucle principale de la partie et de la gestion des tours successifs.
+                </li>
+                <li>
+                  Implémentation d’un grand nombre de cartes (Gare, Usine de wagons, Train postal, Centre de contrôle, etc.), chacune avec un comportement unique à programmer.
+                </li>
+                <li>
+                  Mise en place de la logique de pioche, défausse, et gestion des mains de cartes, à travers des méthodes telles que <code> piocher()</code>,<code> defausseTo()</code>,<code> ajouterMainReserve()</code>, <code>retirer()</code>, ou <code>prendreFerraille()</code>.
+                </li>
+              </ul>
               <div class="parent-container">
                 <div class="image-card">
                   <div class="image-content2">
@@ -122,10 +156,67 @@
 
               <p>
                 Voici un exemple de méthode que j'ai développée lors de ce projet. Cette méthode permet au joueur d'effectuer son tour de jeu, en prenant en compte les règles et les actions disponibles.              </p>
-
               <p>
-                Ce projet a été une expérience à la fois captivante et enrichissante, autant sur le plan de la gestion de projet que sur celui de la programmation.
+                Un soin particulier a été apporté à la qualité du code, à la création de tests unitaires, et au respect de l'architecture logicielle imposée. Cette phase m’a permis de renforcer ma maîtrise des collections en Java, de la gestion d’états d’un joueur, et de la conception de systèmes orientés objet complexes.
               </p>
+              <h5>Phase 2 : Intégration d’algorithmes de graphes</h5>
+              <p>Lors de cette seconde phase, le projet a pris une dimension algorithmique plus poussée avec l’intégration de structures et algorithmes de graphes, afin de modéliser des aspects stratégiques du réseau ferroviaire.</p>
+              <p>L’objectif principal était d’appliquer les notions vues en cours de graphes (parcours, chemins optimaux, connexité…) à un cas concret. Cette phase a permis d’enrichir la logique du jeu avec des fonctionnalités telles que :</p>
+              <ul>
+                <li>
+                  la détection de connexions entre différentes villes via les rails posés par les joueurs
+                </li>
+                <li>
+                  la vérification de validité de placement de rails selon le graphe du plateau
+                </li>
+                <li>
+                  la recherche de chemins entre des points du plateau pour des effets de cartes ou des règles spécifiques
+                </li>
+              </ul>
+              <p>Pour cette phase, j’ai mobilisé mes connaissances en :</p>
+              <ul>
+                <li>
+                  modélisation d’un plateau de jeu sous forme de graphe
+                </li>
+                <li>
+                  implémentation d’algorithmes de parcours (Dijkstra)
+                </li>
+                <li>
+                  et intégration de ces algorithmes dans la logique métier existante, tout en maintenant la cohérence de l’architecture objet
+                </li>
+              </ul>
+              <p>Cette étape m’a permis de consolider ma capacité à relier des concepts théoriques à des besoins fonctionnels, et à les intégrer dans un code collaboratif et structuré.</p>
+              <h5>Phase 3 : Développement de l’interface graphique avec JavaFX</h5>
+              <p>La troisième phase du projet a consisté à concevoir une interface graphique complète en JavaFX, remplaçant l’interface web fournie initialement. Cette étape visait à rendre l’expérience utilisateur plus fluide, interactive et sous forme de logiciel plutôt que web.</p>
+              <p>En suivant une architecture en couches claire, nous avons :</p>
+              <ul>
+                <li>
+                  construit les différentes vues JavaFX (plateau de jeu, main du joueur, réserve de cartes, journal de jeu...)
+                </li>
+                <li>
+                  intégré les interactions utilisateur avec le moteur du jeu via des contrôleurs JavaFX
+                </li>
+                <li>
+                  veillé à respecter les contraintes d’ergonomie et de lisibilité, en affichant dynamiquement les choix, les effets de cartes et les éléments du plateau
+                </li>
+              </ul>
+              <p>
+                L'interface devait communiquer en temps réel avec le backend Java, tout en respectant les règles du jeu. Nous avons utilisé les méthodes de journalisation (<code>log()</code>) et de saisie (<code>choisir()</code>) pour établir le lien entre la logique du jeu et l’affichage graphique.
+              </p>
+              <p>
+                Cette phase m’a permis de :
+              </p>
+              <ul>
+                <li>
+                  me familiariser avec JavaFX, sa gestion des événements et de la scène graphique
+                </li>
+                <li>
+                  comprendre les principes d’interaction entre une IHM et du backend
+                </li>
+                <li>
+                  améliorer mes compétences en expérience utilisateur (UX) et en programmation d’interfaces
+                </li>
+              </ul>
 
             </div>
           </div>
