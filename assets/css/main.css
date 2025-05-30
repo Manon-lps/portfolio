@@ -1274,11 +1274,22 @@ code {
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 20px;
+  text-align: justify;
+  border-bottom: solid 3px var(--accent-color);
 }
 
 .portfolio-details .portfolio-description p {
   padding: 0;
+  text-align: justify;
 }
+.portfolio-details .portfolio-description ul {
+  text-align: justify;
+}
+.portfolio-details .portfolio-description h5,h4 {
+  max-width: 70%;
+  border-bottom: solid 1px var(--accent-color);
+}
+
 
 .portfolio-details .portfolio-description .testimonial-item {
   padding: 30px 30px 0 30px;
@@ -1655,8 +1666,7 @@ code {
 .image-card {
   display: inline-block;
   margin: 20px;
-  border: 2px solid rgba(76, 22, 112, 0.31);
-  border-radius: 10px;
+  border: 1px solid var(--accent-color);
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -1677,6 +1687,47 @@ code {
   margin: 0 auto;
 }
 
+.competences {
+  display: flex;
+}
+.competence {
+  background-color: #060606;
+  border: 2px solid #4b6cb7;
+  border-radius: 12px;
+  padding: 1rem 1.2rem;
+  margin: 0 5px 30px 5px;
+  box-shadow: 0 4px 8px rgba(75, 108, 183, 0.1);
+  max-width: 400px;
+  transition: transform 0.2s ease;
+}
+
+.competence:hover {
+  transform: scale(1.02);
+}
+
+.competence strong {
+  display: block;
+  color: white;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.competence a {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.competence a:hover {
+  text-decoration: underline;
+}
+.imagefivem {
+  display: flex;
+  justify-content: center;
+}
+.descriptif {
+  font-size: 12px;
+}
 
 
 
