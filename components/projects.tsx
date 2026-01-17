@@ -47,7 +47,7 @@ const projects = [
         title: "My Avatar",
         description:
             "Développement d’une application web permettant aux utilisateurs de gérer un avatar unique associé à une ou plusieurs adresses email.",
-        image: "/eq3.png",
+        image: "/myavatar.jpg",
         tags: ["Symfony", "PHP", "Gitlab", "Docker"],
         link: "/projects/Myavatar",
         github: "#",
