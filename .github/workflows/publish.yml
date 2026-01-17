@@ -33,6 +33,7 @@ jobs:
       - name: Build with Next.js 🏗️
         env:
           NODE_ENV: production
+          NEXT_PUBLIC_BASE_PATH: /portfolio
         run: npx next build
 
       - name: Upload artifact 📡
