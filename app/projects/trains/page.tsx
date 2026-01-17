@@ -84,7 +84,7 @@ export default function TrainsProject() {
                         <div className="mb-24">
                             <div className="relative aspect-video rounded-2xl overflow-hidden bg-muted/50 mb-6">
                                 <Image
-                                    src={`${process.env.NEXT_PUBLIC_BASE_PATH}${projectImages[activeImage] || "/placeholder.svg"}`}
+                                    src={`${process.env.NEXT_PUBLIC_BASE_PATH}/trains-1.png`}
                                     alt="Aperçu du projet"
                                     fill
                                     className="object-cover"
