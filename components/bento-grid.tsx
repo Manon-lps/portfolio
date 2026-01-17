@@ -90,7 +90,7 @@ export function BentoGrid() {
           <div>
             <div className="aspect-video bg-muted rounded-lg mb-4 overflow-hidden">
               <img
-                src="/modern-web-dashboard.png"
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH}/modern-web-dashboard.png`}
                 alt="Application E-commerce"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />
@@ -114,7 +114,7 @@ export function BentoGrid() {
           <div>
             <div className="aspect-video bg-muted rounded-lg mb-4 overflow-hidden">
               <img
-                src="/social-media-app-interface.png"
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH}/social-media-app-interface.png`}
                 alt="Réseau social"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />
