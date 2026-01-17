@@ -6,9 +6,9 @@ import Link from "next/link"
 import { useState } from "react"
 
 const projectImages = [
-    "/ctf2.png",
-    "/ctf3.png",
-    "/ctf4.png",
+    "/myavatar1.png",
+    "/myavatar2.png",
+    "/myavatar3.png",
 ]
 
 export default function TrainsProject() {
