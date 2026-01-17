@@ -4,7 +4,7 @@
 /node_modules
 
 # next.js
-/.next/rm -rf out .next
+/.next/
 
 # production
 /build
