@@ -86,7 +86,7 @@ export default function TrainsProject() {
                         <div className="mb-24">
                             <div className="relative aspect-video rounded-2xl overflow-hidden bg-muted/50 mb-6">
                                 <Image
-                                    src={projectImages[activeImage] || "/placeholder.svg"}
+                                    src={`${process.env.NEXT_PUBLIC_BASE_PATH}${projectImages[activeImage] || "/placeholder.svg"}`}
                                     alt="Aperçu du projet"
                                     fill
                                     className="object-contain"
@@ -103,7 +103,7 @@ export default function TrainsProject() {
                                                 : "border-border hover:border-primary/50"
                                         }`}
                                     >
-                                        <Image src={img || "/placeholder.svg"} alt={`Aperçu ${idx + 1}`} fill className="object-cover" />
+                                        <Image src={`${process.env.NEXT_PUBLIC_BASE_PATH}${img || "/placeholder.svg"}`} alt={`Aperçu ${idx + 1}`} fill className="object-cover" />
                                     </button>
                                 ))}
                             </div>
@@ -489,7 +489,7 @@ export default function TrainsProject() {
                 >
                     <div className="relative w-[90vw] h-[90vh]">
                         <Image
-                            src="/ctf6.png"
+                            src={`${process.env.NEXT_PUBLIC_BASE_PATH}/ctf6.png`}
                             alt="Architecture MVC du projet Herbazon"
                             fill
                             className="object-contain"

@@ -74,7 +74,7 @@ export function Projects() {
                                     <Link href={project.link}>
                                         <div className="relative h-48 overflow-hidden bg-muted cursor-pointer">
                                             <Image
-                                                src={project.image || "/placeholder.svg"}
+                                                src={`${process.env.NEXT_PUBLIC_BASE_PATH}${project.image || "/placeholder.svg"}`}
                                                 alt={project.title}
                                                 fill
                                                 className="object-contain group-hover:scale-110 transition-transform duration-500"
