@@ -50,6 +50,9 @@ export function Navigation() {
             <a href="#projects" className="text-sm hover:text-primary transition-colors">
               Projets
             </a>
+            <a href="/portfolio-apprentissage" className="text-sm hover:text-primary transition-colors">
+              Portfolio d&apos;apprentissage
+            </a>
             <a href="#contact" className="text-sm hover:text-primary transition-colors">
               Contact
             </a>

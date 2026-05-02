@@ -28,6 +28,9 @@ export default function TrainsProject() {
                             <Link href="/#projects" className="text-sm hover:text-primary transition-colors">
                                 Projets
                             </Link>
+                            <Link href="/portfolio-apprentissage" className="text-sm hover:text-primary transition-colors">
+                                Portfolio d&apos;apprentissage
+                            </Link>
                             <Link href="/#contact" className="text-sm hover:text-primary transition-colors">
                                 Contact
                             </Link>
