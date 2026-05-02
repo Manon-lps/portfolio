@@ -34,7 +34,7 @@ jobs:
         env:
           NODE_ENV: production
           NEXT_PUBLIC_BASE_PATH: /portfolio
-        run: npx next build
+        run: rm -rf out && npx next build
 
       - name: Upload artifact 📡
         uses: actions/upload-pages-artifact@v3
